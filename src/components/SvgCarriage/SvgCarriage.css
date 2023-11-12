@@ -1,0 +1,68 @@
+#carriage {
+    fill: rgb(197, 197, 197);
+    color: black;
+}
+text{
+    font-size: 20px;
+    font-weight: bold;
+    fill: black;
+}
+#Railway_carriage {
+    fill: rgb(148, 148, 148);
+}
+
+#Fon{
+    fill: #ffffff;
+}
+
+#Compartments{
+    fill: rgb(253, 253, 253);
+}
+
+#Tables{
+    fill: rgb(206, 206, 206);
+}
+#Cup_for_table{
+    fill: rgb(180, 180, 180);
+}
+#Icons{
+    fill: rgb(148, 148, 148);
+}
+.seat {
+    --color: rgb(30, 76, 117);
+    --shadow-color: rgb(12, 21, 38);
+    cursor: pointer;
+    transition: 0.2s;
+    fill: var(--color);
+}
+
+.seat:nth-child(2n){
+    filter: drop-shadow(-3px 5px 5px var(--shadow-color));
+}
+.seat:nth-child(2n+1){
+    filter: drop-shadow(3px 5px 5px var(--shadow-color));
+}
+.above{}
+
+.seat.hover {
+    filter: drop-shadow(0px 5px 20px rgb(54, 83, 141));
+    fill: rgb(119, 146, 197);
+}
+/*.seat:hover{*/
+/*    filter: drop-shadow(0px 5px 20px var(--color));*/
+/*}*/
+.seat.taken{
+    cursor: auto;
+}
+
+#dropdown{
+    z-index: 10;
+    opacity: 0;
+    transition: opacity 0.2s;
+    position: absolute;
+    pointer-events: none;
+    box-shadow: 0px 10px 20px rgba(54, 83, 141, 0.43);
+}
+#dropdown.hover{
+    opacity: 1!important;
+}

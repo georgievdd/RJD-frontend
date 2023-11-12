@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    background-color: white;
+    margin: 0;
+    --mantine-breakpoint-xs: 36em;
+    --mantine-breakpoint-sm: 48em;
+    --mantine-breakpoint-md: 62em;
+    --mantine-breakpoint-lg: 75em;
+    --mantine-breakpoint-xl: 88em;
+}
+
+.alert-message {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: lightcoral;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    z-index: 1000;
+    animation: fadeInOut 2s forwards;
+}
+
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+        transform: translateX(-50%) translateY(100%);
+    }
+    10%, 90% {
+        opacity: 1;
+        transform: translateX(-50%) translateY(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(-50%) translateY(-100%);
+    }
+}

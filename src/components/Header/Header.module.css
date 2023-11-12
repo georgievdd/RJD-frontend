@@ -1,0 +1,60 @@
+.header {
+    height: 80px;
+    margin-bottom: 20px;
+    background-color: var(--mantine-color-body);
+    border-bottom: 1px solid #363636;
+}
+
+.inner {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dib {
+    display: inline-block;
+}
+
+.link {
+    display: block;
+    line-height: 1;
+    padding: 8px 12px;
+    border-radius: var(--mantine-radius-sm);
+    text-decoration: none;
+    color: light-dark(var(--mantine-color-gray-7), var(--mantine-color-dark-0));
+    font-size: var(--mantine-font-size-sm);
+    font-weight: 500;
+
+    @mixin hover {
+        background-color: light-dark(var(--mantine-color-gray-0), var(--mantine-color-dark-6));
+    }
+
+    [data-mantine-color-scheme] &[data-active] {
+        background-color: var(--mantine-color-blue-filled);
+        color: var(--mantine-color-white);
+    }
+}
+
+.hv:hover {
+    color: #FFFF !important;
+}
+
+.simpletlink, .currentlink {
+    margin-right: 30px;
+    font-weight: 500;
+    margin-top: 50px;
+    padding-bottom: 30px;
+    /* transition: ease-in-out 0.1s; */
+}
+.currentlink {
+    color: white;
+    border-bottom: 3px solid rgb(64,156,147);
+}
+.simpletlink:hover {
+    color: white;
+}
+
+.linkwrapper {
+    height: 27px;
+}

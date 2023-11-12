@@ -1,0 +1,42 @@
+.wrapper {
+  position: relative;
+  margin-bottom: rem(30px);
+  cursor: pointer;
+}
+
+.dropzone {
+  border-width: rem(1px);
+  padding-bottom: rem(50px);
+  border: 2px dotted gray;
+  border-radius: 20px;
+  border-style: dashed;
+  width: 200px !important;
+  height: 200px;
+}
+
+.icon {
+  color: light-dark(var(--mantine-color-gray-4), var(--mantine-color-dark-3));
+}
+
+.control {
+  position: absolute;
+  width: rem(250px);
+  left: calc(50% - rem(125px));
+  bottom: rem(-20px);
+}
+
+.image {
+  border-width: rem(1px);
+  padding-bottom: rem(50px);
+  border-radius: 20px;
+  width: 200px;
+  height: 200px;
+}
+
+.headinput input {
+  border: none;
+  font-size: 34px;
+  font-weight: 700;
+  padding: 0;
+  margin-top: 10px;
+}

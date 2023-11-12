@@ -1,0 +1,24 @@
+.cinput {
+  display: block;
+  border-radius: 0;
+  font-size: 20px;
+  padding: 3px;
+  font-weight: 400;
+  border: 1px solid gray;
+  outline: none;
+  padding-left: 10px;
+}
+.cinput:focus, .cinput:active {
+  border: 1px solid #aba7a7;
+}
+.adjinput {
+  cursor: text;
+  display: inline-block;
+  font-size: 20px;
+  padding: 3px;
+  font-weight: 400;
+  border-bottom: 2px solid red;
+  outline: none;
+  min-width: 50px; 
+  max-width: 500px
+}

@@ -1,0 +1,13 @@
+.companion-container {
+  /* transition: all 0.3s; */
+}
+
+.companion-container-hv:hover {
+  box-shadow: 0px 0px 25px 0px #2B346726;
+  cursor: pointer;
+}
+
+.companion-movable {
+  box-shadow: 0px 0px 25px 0px #2B346726;
+  outline: 2px solid #22284d26;
+}
